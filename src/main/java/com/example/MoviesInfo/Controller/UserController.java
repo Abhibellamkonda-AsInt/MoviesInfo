@@ -24,9 +24,6 @@ public class UserController {
 	@Autowired
 	private UserServiceImpl userservice;
 	
-	
-	
-	
 	@PostMapping
 	public UserResponseDto addUser(@RequestBody UserRequestDto user) {
 		return userservice.addUser(user);
